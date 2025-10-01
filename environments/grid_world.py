@@ -39,7 +39,7 @@ class GridWorld:
         
         # 动作空间: 上(0), 右(1), 下(2), 左(3)
         self.action_space = 4
-        self.actions = [(0, -1), (1, 0), (0, 1), (-1, 0)]  # 上右下左
+        self.actions = [(-1, 0), (0, 1), (1, 0), (0, -1)]  # 上右下左
         
         # 状态空间
         self.state_space = size * size
@@ -66,7 +66,7 @@ class GridWorld:
         self.step_count = 0
         return self.current_state
     
-    def step(self, action: int) -> Tuple[Tuple[int, int], float, bool, Dict[str, Any]]:
+    def  step(self, action: int) -> Tuple[Tuple[int, int], float, bool, Dict[str, Any]]:
         """
         执行一步动作
         

@@ -1,0 +1,51 @@
+{
+  "start_date": "2025-10-01T11:05:54.669168",
+  "current_week": 1,
+  "progress": {
+    "week1": {
+      "start_date": "2025-10-01T11:12:49.815197",
+      "topics_completed": [
+        "RL基本概念",
+        "MDP理论"
+      ],
+      "exercises_completed": [
+        "基础概念测验"
+      ],
+      "projects_completed": [],
+      "study_time": 4.0,
+      "notes": []
+    }
+  },
+  "achievements": [],
+  "study_sessions": [
+    {
+      "date": "2025-10-01T11:05:54.669890",
+      "week": 1,
+      "duration": 2.5,
+      "activity": "理论学习",
+      "notes": "学习了RL基本概念和MDP"
+    },
+    {
+      "date": "2025-10-01T11:05:54.670019",
+      "week": 1,
+      "duration": 1.5,
+      "activity": "实践练习",
+      "notes": "完成了基础概念测验"
+    },
+    {
+      "date": "2025-10-01T11:12:49.815720",
+      "week": 1,
+      "duration": 2.5,
+      "activity": "理论学习",
+      "notes": "学习了RL基本概念"
+    },
+    {
+      "date": "2025-10-01T11:12:49.815803",
+      "week": 1,
+      "duration": 1.5,
+      "activity": "实践练习",
+      "notes": "完成了基础概念测验"
+    }
+  ],
+  "notes": []
+}

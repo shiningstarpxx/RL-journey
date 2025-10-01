@@ -36,46 +36,63 @@
 ## 🏗️ 项目结构
 
 ```
-RL-Learning/
-├── 📁 environments/          # 环境定义
-│   ├── 📄 grid_world.py     # 网格世界环境
-│   ├── 📄 cartpole_env.py   # CartPole环境
-│   └── 📄 custom_envs.py    # 自定义环境
-├── 📁 algorithms/            # RL算法实现
-│   ├── 📁 tabular/          # 表格方法
-│   │   ├── 📄 q_learning.py
-│   │   └── 📄 sarsa.py
-│   ├── 📁 policy_gradient/  # 策略梯度方法
-│   │   ├── 📄 policy_gradient.py
-│   │   └── 📄 actor_critic.py
-│   └── 📁 deep_rl/          # 深度强化学习
-│       ├── 📄 dqn.py
-│       ├── 📄 ppo.py
-│       └── 📄 sac.py
-├── 📁 experiments/           # 实验脚本
-│   ├── 📄 experiment_1_q_learning.py
-│   ├── 📄 experiment_2_policy_gradient.py
-│   └── 📄 experiment_3_deep_rl.py
-├── 📁 notebooks/             # Jupyter notebooks
-│   ├── 📄 01_rl_basics.ipynb
-│   ├── 📄 02_q_learning.ipynb
-│   └── 📄 03_deep_rl.ipynb
-├── 📁 utils/                 # 工具函数
-│   ├── 📄 visualization.py
-│   ├── 📄 metrics.py
-│   └── 📄 helpers.py
-├── 📄 requirements.txt       # 依赖包
-├── 📄 setup.py              # 安装脚本
-└── 📄 README.md             # 项目说明
+RL-journey/
+├── 📚 docs/                    # 项目文档
+│   ├── RL_LEARNING_PATH.md     # 强化学习学习路径
+│   ├── QUICK_START_GUIDE.md    # 快速开始指南
+│   ├── PROJECT_SUMMARY.md      # 项目总结
+│   └── DIRECTORY_STRUCTURE.md  # 目录结构说明
+├── 🧠 algorithms/              # 强化学习算法实现
+│   ├── tabular/                # 表格型算法
+│   │   ├── q_learning.py       # Q-Learning算法
+│   │   └── sarsa.py           # SARSA算法
+│   ├── policy_gradient/        # 策略梯度算法
+│   ├── actor_critic/           # Actor-Critic算法
+│   ├── deep_rl/                # 深度强化学习
+│   └── modern/                 # 现代算法
+├── 🌍 environments/            # 强化学习环境
+│   └── grid_world.py           # 网格世界环境
+├── 🧪 experiments/             # 实验脚本，按周次组织
+│   ├── week1_basics/           # 第1周：基础概念
+│   ├── week2_q_learning/       # 第2周：Q-Learning
+│   ├── week3_policy_gradient/  # 第3周：策略梯度
+│   ├── week4_actor_critic/     # 第4周：Actor-Critic
+│   ├── week5_6_dqn/            # 第5-6周：深度强化学习
+│   └── week7_8_modern/         # 第7-8周：现代算法
+├── 📝 exercises/               # 练习和作业，按周次组织
+│   ├── week1_exercises/        # 第1周练习
+│   ├── week2_exercises/        # 第2周练习
+│   └── ... (其他周次练习)
+├── 📓 notebooks/               # Jupyter Notebooks
+│   ├── 01_rl_basics.ipynb     # 强化学习基础概念
+│   ├── RLHF_Demo.ipynb        # RLHF演示
+│   └── README.md              # 笔记本使用指南
+├── 📊 progress/                # 学习进度跟踪系统
+│   ├── learning_tracker.py    # 学习跟踪器
+│   └── learning_data.json     # 学习数据
+├── 🛠️ utils/                   # 工具和配置
+│   └── font_config.py         # 字体配置工具
+├── 🎬 scripts/                 # 脚本文件
+│   ├── error_check.py         # 错误检查脚本
+│   └── test_chinese_font.py   # 字体测试脚本
+├── 📁 data/                    # 数据文件
+├── 🎯 models/                  # 训练好的模型
+├── ⚙️ configs/                 # 配置文件
+├── 🎨 assets/                  # 资源文件
+├── 📖 theory/                  # 理论资料
+├── 🐍 src/                     # 源代码
+├── 📋 logs/                    # 日志文件
+├── 🐍 rlhf_env/                # Python虚拟环境
+├── requirements.txt            # 项目依赖
+└── README.md                   # 本文件
 ```
 
 ## 🚀 快速开始
 
 ### 1. 环境设置
 ```bash
-# 创建虚拟环境
-python3 -m venv rl_env
-source rl_env/bin/activate
+# 激活虚拟环境
+source rlhf_env/bin/activate
 
 # 安装依赖
 pip install -r requirements.txt
@@ -84,13 +101,14 @@ pip install -r requirements.txt
 ### 2. 第一个实验
 ```bash
 # 运行Q-Learning实验
-python experiments/experiment_1_q_learning.py
+python experiments/week2_q_learning/experiment_1_q_learning.py
 ```
 
 ### 3. 学习顺序
-1. 阅读 `notebooks/01_rl_basics.ipynb`
-2. 运行基础实验
-3. 逐步深入更复杂的算法
+1. 阅读 `docs/QUICK_START_GUIDE.md` 了解快速开始
+2. 阅读 `docs/RL_LEARNING_PATH.md` 了解学习路径
+3. 运行 `notebooks/01_rl_basics.ipynb` 学习基础概念
+4. 逐步进行实验和练习
 
 ## 📖 学习资源
 
